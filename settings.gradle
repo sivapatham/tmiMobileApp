@@ -1,0 +1,3 @@
+include ':VerifySdk'
+include ':app'
+rootProject.name = "VerifyDemo"
