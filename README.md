@@ -4,14 +4,14 @@
   - [Usecases](#usecases)
   - [Recorded Demo Video](#recorded-demo-video)
 
-- [**Demo User**](#demo-user)
+- [**App Setup as a Demo User**](#demo-user)
   - [Pre-requisites](#demo-pre-requisites)
     <!--- [TrustMeInsurance WebApp setup](#trustmeinsurance-webapp-setup)--->
   - [IBM Verify IDaaS setup](#ibm-verify-idaas-tenant-setup)
   - [Mobile setup](#mobile-setup)
   - [Running the demo](#running-the-demo)
 
-- [**Developer**](#developer)
+- [**Contributing as a Developer**](#developer)
   - [Pre-requisites](#development-pre-requisites)
   - [Setup Android Studio](#setup-android-studio)
   - [IBM Verify IDaaS tenant setup](#ibm-verify-idaas-tenant-setup)
