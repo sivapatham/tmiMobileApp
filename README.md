@@ -24,7 +24,7 @@
   - [Quote & Policy pages](#quote--policy-pages)--->
 
 ## Introduction
-**CIAM - Consumer Identity and Access Management** is key focus areas by many enterprises/brands in their digital transformation journey. **IBM Security Verify IDaaS**, being market leader in CIAM space, helps to develop best consumer experiences in their channel applications. This code-pattern will explain in detail how to leverage Verify IDaaS and SDK/APIs to develop a Mobile App to create best *omni-channel consumer experiences* by having features like password-less login, social login & ease of consents and preferences management and bringing transparency while processing PI data so on.
+**CIAM - Consumer Identity and Access Management** is key focus areas by many enterprises/brands in their digital transformation journey. **IBM Security Verify IDaaS**, being market leader in CIAM space, helps to develop best consumer experiences in their channel applications. This project will explain in detail how to leverage Verify IDaaS and SDK/APIs to develop a Mobile App to create best *omni-channel consumer experiences* by having features like password-less login, social login & ease of consents and preferences management and bringing transparency while processing PI data so on.
 
 ### Usecases
 
@@ -41,7 +41,7 @@
 
 ## Demo User
 
-### Demo Pre-requisites
+   ### Demo Pre-requisites
 
    + __TrustMeInsurance WebApp setup__
 
@@ -60,14 +60,14 @@
      Click [here](https://www.ibm.com/account/reg/us-en/signup?formid=urx-30041) to get IBM Security Verify free trial
 
 
-### IBM Verify IDaaS setup
-Click [here](docs/Verify_IDAAS_Setup.md) to get instructions to setup IBM Verify IDaaS
+   ### IBM Verify IDaaS setup
+   Click [here](docs/Verify_IDAAS_Setup.md) to get instructions to setup IBM Verify IDaaS
 
-### Mobile setup
-Click [here](docs/User_Mobile_Setup.md) to setup Mobile device
+   ### Mobile setup
+   Click [here](docs/User_Mobile_Setup.md) to setup Mobile device
 
-### Running the demo
-Click [here](docs/Running_Demo.md) to get instructions to run the demo
+   ### Running the demo
+   Click [here](docs/Running_Demo.md) to get instructions to run the demo
 
 ## Developer
 
