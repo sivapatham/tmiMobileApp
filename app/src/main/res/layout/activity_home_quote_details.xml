@@ -1,0 +1,509 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+
+    tools:context=".HomeQuoteDetails">
+
+    <ScrollView
+        android:id="@+id/scrollView2"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:scrollbarAlwaysDrawVerticalTrack="true"
+        android:scrollbars="vertical"
+        tools:layout_editor_absoluteX="0dp"
+        tools:layout_editor_absoluteY="0dp">
+
+        <androidx.constraintlayout.widget.ConstraintLayout
+            android:id="@+id/linearLayout"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+            <ImageView
+                android:id="@+id/imageView2"
+                android:layout_width="match_parent"
+                android:layout_height="44dp"
+                android:background="#3F51B5"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toTopOf="parent"
+                app:srcCompat="@drawable/group_10435" />
+
+            <androidx.cardview.widget.CardView
+                android:id="@+id/cardViewCar"
+                android:layout_width="405dp"
+                android:layout_height="696dp"
+                android:layout_margin="10dp"
+                android:layout_marginEnd="52dp"
+                app:cardBackgroundColor="@color/white"
+                app:cardCornerRadius="20dp"
+                app:cardElevation="10dp"
+                app:cardMaxElevation="12dp"
+                app:cardPreventCornerOverlap="true"
+                app:cardUseCompatPadding="true"
+                app:layout_constraintBottom_toBottomOf="parent"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/imageView2">
+
+                <androidx.constraintlayout.widget.ConstraintLayout
+                    android:id="@+id/linearLayout1"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content">
+
+                    <TextView
+                        android:id="@+id/textView35"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="bottom|center_horizontal"
+                        android:layout_marginStart="40dp"
+                        android:layout_marginEnd="41dp"
+                        android:text="Get insured"
+                        android:textAlignment="center"
+                        android:textColor="@color/blue_50"
+                        android:textSize="18sp"
+                        app:layout_constraintEnd_toEndOf="parent"
+                        app:layout_constraintHorizontal_bias="0.0"
+                        app:layout_constraintStart_toStartOf="parent"
+                        app:layout_constraintTop_toTopOf="parent" />
+
+                    <TextView
+                        android:id="@+id/textView36"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+
+                        android:text="Welcome. Apply in minutes"
+                        android:textAlignment="center"
+                        android:textColor="@color/blue_50"
+                        android:textSize="18sp"
+                        app:layout_constraintBottom_toBottomOf="parent"
+                        app:layout_constraintEnd_toEndOf="parent"
+                        app:layout_constraintHorizontal_bias="1.0"
+                        app:layout_constraintStart_toStartOf="parent"
+                        app:layout_constraintTop_toBottomOf="@+id/textView35"
+                        app:layout_constraintVertical_bias="0.0" />
+
+                    <TextView
+                        android:id="@+id/textView12"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="4dp"
+                        android:layout_marginEnd="156dp"
+                        android:text="Get an instant quote"
+                        android:textAlignment="center"
+                        android:textSize="18sp"
+                        android:textStyle="bold"
+                        app:layout_constraintEnd_toEndOf="parent"
+                        app:layout_constraintTop_toBottomOf="@+id/textView36" />
+
+                    <TextView
+                        android:id="@+id/editTextTextPersonName"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:ems="10"
+                        android:inputType="textPersonName"
+                        android:text="      Home details"
+                        android:textSize="18sp"
+                        android:textStyle="bold"
+                        app:layout_constraintBottom_toBottomOf="parent"
+                        app:layout_constraintEnd_toEndOf="parent"
+                        app:layout_constraintHorizontal_bias="0.0"
+                        app:layout_constraintStart_toStartOf="parent"
+                        app:layout_constraintTop_toBottomOf="@id/textView12"
+                        app:layout_constraintVertical_bias="0.026" />
+
+                    <com.google.android.material.textfield.TextInputLayout
+                        android:id="@+id/TILbday"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginStart="1dp"
+                        android:layout_marginEnd="39dp"
+                        app:layout_constraintBottom_toBottomOf="parent"
+                        app:layout_constraintEnd_toEndOf="parent"
+                        app:layout_constraintHorizontal_bias="0.0"
+                        app:layout_constraintStart_toStartOf="parent"
+                        app:layout_constraintTop_toBottomOf="@id/editTextTextPersonName"
+                        app:layout_constraintVertical_bias="0.055">
+
+                        <com.google.android.material.textfield.TextInputEditText
+                            android:id="@+id/bday_date"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_marginStart="25dp"
+                            android:layout_marginTop="36dp"
+                            android:layout_marginEnd="2dp"
+                            android:backgroundTint="@android:color/darker_gray"
+                            android:cursorVisible="true"
+                            android:ems="10"
+                            android:hint="Birthday (dd/mm/yyyy)"
+                            android:inputType="date"
+                            android:shadowColor="@android:color/darker_gray"
+                            android:singleLine="true"
+                            android:textAlignment="textStart"
+                            android:textColor="@color/blue_50"
+                            android:textColorHint="@color/blue_50"
+                            android:textColorLink="@color/blue_50"
+                            android:textIsSelectable="true"
+                            android:textSize="14sp"
+                            app:layout_constraintEnd_toEndOf="parent"
+                            app:layout_constraintHorizontal_bias="0.0"
+                            app:layout_constraintStart_toStartOf="parent"
+                            app:layout_constraintTop_toBottomOf="@+id/editTextTextPersonName" />
+
+                    </com.google.android.material.textfield.TextInputLayout>
+
+                    <ImageButton
+                        android:id="@+id/simpleImageButtonCalendar"
+                        android:layout_width="wrap_content"
+                        android:layout_height="58dp"
+                        android:layout_marginTop="8dp"
+                        android:adjustViewBounds="true"
+                        android:background="#FFF"
+                        android:onClick="setDate"
+                        android:padding="20dp"
+                        android:src="@drawable/calendar_foreground"
+                        app:layout_constraintEnd_toEndOf="@+id/TILbday"
+                        app:layout_constraintTop_toBottomOf="@+id/editTextTextPersonName" />
+
+                    <com.google.android.material.textfield.TextInputLayout
+                        android:id="@+id/TILAddress"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginStart="1dp"
+                        app:layout_constraintBottom_toBottomOf="parent"
+                        app:layout_constraintEnd_toEndOf="parent"
+                        app:layout_constraintHorizontal_bias="1.0"
+                        app:layout_constraintStart_toStartOf="parent"
+                        app:layout_constraintTop_toBottomOf="@id/TILbday"
+                        app:layout_constraintVertical_bias="0.0">
+
+                        <com.google.android.material.textfield.TextInputEditText
+                            android:id="@+id/address"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_marginStart="25dp"
+                            android:layout_marginTop="36dp"
+                            android:backgroundTint="@android:color/darker_gray"
+                            android:cursorVisible="true"
+                            android:ems="10"
+                            android:hint="Postal Address"
+                            android:inputType="textPostalAddress"
+                            android:shadowColor="@android:color/darker_gray"
+                            android:singleLine="true"
+                            android:textAlignment="textStart"
+                            android:textColor="@color/blue_50"
+                            android:textColorHint="@color/blue_50"
+                            android:textColorLink="@color/blue_50"
+                            android:textIsSelectable="true"
+                            android:textSize="14sp"
+                            app:layout_constraintEnd_toEndOf="parent"
+                            app:layout_constraintHorizontal_bias="0.0"
+                            app:layout_constraintStart_toStartOf="parent"
+                            app:layout_constraintTop_toBottomOf="@+id/editTextTextPersonName" />
+
+                    </com.google.android.material.textfield.TextInputLayout>
+
+                    <TableRow
+                        android:id="@+id/tableRow1"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:weightSum="8"
+                        app:layout_constraintEnd_toEndOf="parent"
+                        app:layout_constraintStart_toStartOf="parent"
+                        app:layout_constraintTop_toBottomOf="@id/TILAddress">
+
+                        <com.google.android.material.textfield.TextInputLayout
+                            android:id="@+id/TILCity"
+                            android:layout_width="32dp"
+                            android:layout_height="wrap_content"
+                            android:layout_marginStart="1dp"
+                            android:layout_weight="2.6"
+                            app:layout_constraintBottom_toBottomOf="parent"
+                            app:layout_constraintEnd_toEndOf="parent"
+                            app:layout_constraintHorizontal_bias="1.0"
+                            app:layout_constraintStart_toStartOf="parent"
+                            app:layout_constraintTop_toBottomOf="@id/TILbday"
+                            app:layout_constraintVertical_bias="0.0">
+
+                            <com.google.android.material.textfield.TextInputEditText
+                                android:id="@+id/city"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:layout_marginStart="25dp"
+                                android:layout_marginTop="36dp"
+                                android:layout_weight="3"
+                                android:backgroundTint="@android:color/darker_gray"
+                                android:cursorVisible="true"
+                                android:ems="10"
+                                android:hint="City"
+                                android:inputType="text"
+                                android:shadowColor="@android:color/darker_gray"
+                                android:singleLine="true"
+                                android:textAlignment="textStart"
+                                android:textColor="@color/blue_50"
+                                android:textColorHint="@color/blue_50"
+                                android:textColorLink="@color/blue_50"
+                                android:textIsSelectable="true"
+                                android:textSize="14sp"
+                                app:layout_constraintEnd_toEndOf="parent"
+                                app:layout_constraintHorizontal_bias="0.0"
+                                app:layout_constraintStart_toStartOf="parent"
+                                app:layout_constraintTop_toBottomOf="@+id/editTextTextPersonName" />
+
+                        </com.google.android.material.textfield.TextInputLayout>
+
+                        <com.google.android.material.textfield.TextInputLayout
+                            android:id="@+id/TILState"
+                            android:layout_width="32dp"
+                            android:layout_height="wrap_content"
+                            android:layout_weight="2.6"
+                            app:layout_constraintBottom_toBottomOf="parent"
+                            app:layout_constraintEnd_toEndOf="parent"
+                            app:layout_constraintHorizontal_bias="1.0"
+                            app:layout_constraintStart_toStartOf="parent"
+                            app:layout_constraintTop_toBottomOf="@id/TILbday"
+                            app:layout_constraintVertical_bias="0.0">
+
+                            <com.google.android.material.textfield.TextInputEditText
+                                android:id="@+id/state"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:layout_marginTop="36dp"
+                                android:layout_weight="2.6"
+                                android:backgroundTint="@android:color/darker_gray"
+                                android:cursorVisible="true"
+                                android:ems="10"
+                                android:hint="State"
+                                android:inputType="text"
+                                android:shadowColor="@android:color/darker_gray"
+                                android:singleLine="true"
+                                android:textAlignment="textStart"
+                                android:textColor="@color/blue_50"
+                                android:textColorHint="@color/blue_50"
+                                android:textColorLink="@color/blue_50"
+                                android:textIsSelectable="true"
+                                android:textSize="14sp"
+                                app:layout_constraintEnd_toEndOf="parent"
+                                app:layout_constraintHorizontal_bias="0.0"
+                                app:layout_constraintStart_toStartOf="parent"
+                                app:layout_constraintTop_toBottomOf="@+id/editTextTextPersonName" />
+
+                        </com.google.android.material.textfield.TextInputLayout>
+
+                        <com.google.android.material.textfield.TextInputLayout
+                            android:id="@+id/TILZip"
+                            android:layout_width="32dp"
+                            android:layout_height="wrap_content"
+                            android:layout_weight="2.6"
+                            app:layout_constraintBottom_toBottomOf="parent"
+                            app:layout_constraintEnd_toEndOf="parent"
+                            app:layout_constraintHorizontal_bias="1.0"
+                            app:layout_constraintStart_toStartOf="parent"
+                            app:layout_constraintTop_toBottomOf="@id/TILbday"
+                            app:layout_constraintVertical_bias="0.0">
+
+                            <com.google.android.material.textfield.TextInputEditText
+                                android:id="@+id/zip"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:layout_marginTop="36dp"
+                                android:layout_weight="2.6"
+                                android:backgroundTint="@android:color/darker_gray"
+                                android:cursorVisible="true"
+                                android:ems="10"
+                                android:hint="Zip"
+                                android:inputType="number"
+                                android:shadowColor="@android:color/darker_gray"
+                                android:singleLine="true"
+                                android:textAlignment="textStart"
+                                android:textColor="@color/blue_50"
+                                android:textColorHint="@color/blue_50"
+                                android:textColorLink="@color/blue_50"
+                                android:textIsSelectable="true"
+                                android:textSize="14sp"
+                                app:layout_constraintEnd_toEndOf="parent"
+                                app:layout_constraintHorizontal_bias="0.0"
+                                app:layout_constraintStart_toStartOf="parent"
+                                app:layout_constraintTop_toBottomOf="@+id/editTextTextPersonName" />
+
+                        </com.google.android.material.textfield.TextInputLayout>
+
+                    </TableRow>
+
+                    <TableRow
+                        android:id="@+id/tableRow2"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:weightSum="8"
+                        app:layout_constraintEnd_toEndOf="parent"
+                        app:layout_constraintHorizontal_bias="0.0"
+                        app:layout_constraintStart_toStartOf="parent"
+                        app:layout_constraintTop_toBottomOf="@id/tableRow1">
+
+                        <com.google.android.material.textfield.TextInputLayout
+                            android:id="@+id/TILConstYear"
+                            android:layout_width="32dp"
+                            android:layout_height="wrap_content"
+                            android:layout_marginStart="1dp"
+                            android:layout_weight="4"
+                            app:layout_constraintBottom_toBottomOf="parent"
+                            app:layout_constraintEnd_toEndOf="parent"
+                            app:layout_constraintHorizontal_bias="1.0"
+                            app:layout_constraintStart_toStartOf="parent"
+                            app:layout_constraintTop_toBottomOf="@id/TILbday"
+                            app:layout_constraintVertical_bias="0.0"
+                            app:errorEnabled="true">
+
+                            <com.google.android.material.textfield.TextInputEditText
+                                android:id="@+id/const_year"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:layout_marginStart="25dp"
+                                android:layout_marginTop="36dp"
+                                android:layout_weight="4"
+                                android:backgroundTint="@android:color/darker_gray"
+                                android:cursorVisible="true"
+                                android:ems="10"
+                                android:hint="Construction Year"
+                                android:inputType="text"
+                                android:shadowColor="@android:color/darker_gray"
+                                android:singleLine="true"
+                                android:textAlignment="textStart"
+                                android:textColor="@color/blue_50"
+                                android:textColorHint="@color/blue_50"
+                                android:textColorLink="@color/blue_50"
+                                android:textIsSelectable="true"
+                                android:textSize="14sp"
+                                app:layout_constraintEnd_toEndOf="parent"
+                                app:layout_constraintHorizontal_bias="0.0"
+                                app:layout_constraintStart_toStartOf="parent" />
+
+                        </com.google.android.material.textfield.TextInputLayout>
+
+                        <Spinner
+                            android:id="@+id/spinner4_cons_type"
+                            android:layout_width="44dp"
+                            android:layout_height="66dp"
+                            android:layout_weight="4" />
+
+
+                    </TableRow>
+
+                    <com.google.android.material.textfield.TextInputLayout
+                        android:id="@+id/TILIDV"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+
+                        android:layout_marginStart="1dp"
+
+                        app:layout_constraintBottom_toBottomOf="parent"
+                        app:layout_constraintStart_toStartOf="parent"
+                        app:layout_constraintTop_toBottomOf="@id/tableRow2"
+                        app:layout_constraintVertical_bias="0.0">
+
+                        <com.google.android.material.textfield.TextInputEditText
+                            android:id="@+id/idv"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_marginStart="25dp"
+                            android:layout_marginTop="36dp"
+
+                            android:backgroundTint="@android:color/darker_gray"
+                            android:cursorVisible="true"
+                            android:ems="10"
+                            android:hint="Insurance Coverage"
+                            android:inputType="number"
+                            android:shadowColor="@android:color/darker_gray"
+                            android:singleLine="true"
+                            android:textAlignment="textStart"
+                            android:textColor="@color/blue_50"
+                            android:textColorHint="@color/blue_50"
+                            android:textColorLink="@color/blue_50"
+                            android:textIsSelectable="true"
+                            android:textSize="14sp"
+                            app:layout_constraintEnd_toEndOf="parent"
+                            app:layout_constraintHorizontal_bias="0.0"
+                            app:layout_constraintStart_toStartOf="parent"
+                            app:layout_constraintTop_toBottomOf="@+id/tableRow2" />
+
+                    </com.google.android.material.textfield.TextInputLayout>
+
+                    <com.google.android.material.textfield.TextInputLayout
+                        android:id="@+id/TILSSNorAadhar"
+                        android:layout_width="368dp"
+                        android:layout_height="65dp"
+                        android:layout_marginStart="1dp"
+                        android:visibility="invisible"
+                        app:errorEnabled="true"
+                        app:layout_constraintBottom_toBottomOf="parent"
+                        app:layout_constraintStart_toStartOf="parent"
+                        app:layout_constraintTop_toBottomOf="@id/TILIDV"
+                        app:layout_constraintVertical_bias="0.0">
+
+                        <com.google.android.material.textfield.TextInputEditText
+                            android:id="@+id/SSN_aadhar"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_marginStart="25dp"
+                            android:layout_marginTop="36dp"
+                            android:backgroundTint="@android:color/darker_gray"
+                            android:cursorVisible="true"
+                            android:ems="10"
+                            android:hint="SSN/Aadhar"
+                            android:inputType="text"
+                            android:shadowColor="@android:color/darker_gray"
+                            android:singleLine="true"
+                            android:textAlignment="textStart"
+                            android:textColor="@color/blue_50"
+                            android:textColorHint="@color/blue_50"
+                            android:textColorLink="@color/blue_50"
+                            android:textIsSelectable="true"
+                            android:textSize="14sp"
+                            android:visibility="invisible"
+                            app:layout_constraintEnd_toEndOf="parent"
+                            app:layout_constraintHorizontal_bias="0.0"
+                            app:layout_constraintStart_toStartOf="parent"
+                            app:layout_constraintTop_toBottomOf="@+id/tableRow2" />
+
+                    </com.google.android.material.textfield.TextInputLayout>
+
+                    <CheckBox
+                        android:id="@+id/checkBox_EULA"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginStart="25dp"
+                        android:text="Agree to share PII for Background check?"
+                        android:textSize="12sp"
+                        android:visibility="invisible"
+                        app:layout_constraintEnd_toEndOf="@+id/TILSSNorAadhar"
+                        app:layout_constraintHorizontal_bias="0.0"
+                        app:layout_constraintStart_toStartOf="@+id/TILSSNorAadhar"
+                        app:layout_constraintTop_toBottomOf="@id/TILSSNorAadhar" />
+
+                    <Button
+                        android:id="@+id/get_quote"
+                        android:layout_width="233dp"
+                        android:layout_height="54dp"
+                        android:layout_marginTop="14dp"
+                        android:layout_marginBottom="28dp"
+                        android:onClick="getHomeQuote"
+                        android:text="Get a quote"
+                        android:textColor="@color/white"
+                        android:theme="@style/PrimaryButton"
+                        app:layout_constraintBottom_toBottomOf="parent"
+                        app:layout_constraintEnd_toEndOf="parent"
+                        app:layout_constraintStart_toStartOf="parent"
+                        app:layout_constraintTop_toBottomOf="@id/checkBox_EULA"
+                        app:layout_constraintVertical_bias="1.0" />
+
+
+                </androidx.constraintlayout.widget.ConstraintLayout>
+
+
+            </androidx.cardview.widget.CardView>
+        </androidx.constraintlayout.widget.ConstraintLayout>
+    </ScrollView>
+
+</androidx.constraintlayout.widget.ConstraintLayout>

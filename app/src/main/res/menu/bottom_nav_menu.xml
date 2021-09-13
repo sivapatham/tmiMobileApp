@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <item
+        android:id="@+id/navigation_home"
+        android:icon="@drawable/ic_person_foreground"
+        android:title="Profile" />
+
+    <item
+        android:id="@+id/navigation_quote"
+        android:icon="@drawable/ic_quote_foreground"
+        android:title="Quotes" />
+
+    <item
+        android:id="@+id/navigation_policy"
+        android:icon="@drawable/ic_policy_foreground"
+        android:title="Policies" />
+
+</menu>

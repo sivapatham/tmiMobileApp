@@ -1,0 +1,325 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".HomeQuoteDetails">
+
+    <ScrollView
+        android:id="@+id/scrollView2"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:scrollbarAlwaysDrawVerticalTrack="true"
+        android:scrollbars="vertical">
+
+        <androidx.constraintlayout.widget.ConstraintLayout
+            android:id="@+id/linearLayout"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            >
+
+            <ImageView
+                android:id="@+id/imageView2"
+                android:layout_width="215dp"
+                android:layout_height="51dp"
+                android:layout_marginTop="4dp"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintHorizontal_bias="0.0"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toTopOf="parent"
+                app:srcCompat="@drawable/group_10435" />
+
+            <ImageButton
+                android:id="@+id/gsign_in_button"
+                android:layout_width="51dp"
+                android:layout_height="35dp"
+                android:layout_marginStart="120dp"
+                android:layout_marginEnd="30dp"
+                android:layout_marginBottom="690dp"
+                android:visibility="invisible"
+                app:layout_constraintBottom_toBottomOf="parent"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintHorizontal_bias="0.0"
+                app:layout_constraintStart_toEndOf="@+id/imageView2"
+                app:srcCompat="@drawable/group_10434" />
+
+
+            <ImageView
+                android:id="@+id/imageView13"
+                android:layout_width="407dp"
+                android:layout_height="329dp"
+                android:layout_marginTop="44dp"
+                android:adjustViewBounds="false"
+                android:background="#3F51B5"
+                android:cropToPadding="false"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintHorizontal_bias="0.0"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toTopOf="parent"
+                app:srcCompat="@drawable/rectangle_13" />
+
+            <Spinner
+                android:id="@+id/spinner4_cons_type"
+                android:layout_width="147dp"
+                android:layout_height="66dp"
+                android:layout_marginTop="44dp"
+                android:layout_marginEnd="48dp"
+                app:layout_constraintBottom_toTopOf="@+id/imageView30"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/simpleImageButtonCalendar"
+                app:layout_constraintVertical_bias="0.0" />
+
+            <EditText
+                android:id="@+id/bday_date"
+                android:layout_width="255dp"
+                android:layout_height="55dp"
+                android:layout_marginTop="16dp"
+                android:editable="true"
+                android:hint="Birthday (dd/mm/yyyy)"
+                android:textColor="@color/black"
+                android:textSize="14sp"
+                app:layout_constraintStart_toStartOf="@+id/editTextTextPersonName"
+                app:layout_constraintTop_toBottomOf="@+id/editTextTextPersonName" />
+
+
+            <EditText
+                android:id="@+id/const_year"
+                android:layout_width="133dp"
+                android:layout_height="58dp"
+                android:layout_marginBottom="32dp"
+                android:editable="true"
+                android:hint="Construction year"
+                android:inputType="number"
+                android:textColor="@color/black"
+                android:textSize="14sp"
+                app:layout_constraintBottom_toBottomOf="@+id/imageView13"
+                app:layout_constraintEnd_toStartOf="@+id/spinner4_cons_type"
+                app:layout_constraintHorizontal_bias="0.0"
+                app:layout_constraintStart_toStartOf="@+id/bday_date"
+                app:layout_constraintTop_toBottomOf="@+id/bday_date"
+                app:layout_constraintVertical_bias="1.0" />
+
+            <TextView
+                android:id="@+id/textView36"
+                android:layout_width="330dp"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="40dp"
+                android:layout_marginTop="96dp"
+                android:layout_marginEnd="41dp"
+                android:text="Welcome. Apply in minutes"
+                android:textAlignment="center"
+                android:textColor="@color/blue_50"
+                android:textSize="18sp"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintHorizontal_bias="0.0"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toTopOf="parent" />
+
+            <TextView
+                android:id="@+id/textView35"
+                android:layout_width="330dp"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="40dp"
+                android:layout_marginTop="72dp"
+                android:layout_marginEnd="41dp"
+                android:text="Get insured"
+                android:textAlignment="center"
+                android:textColor="@color/blue_50"
+                android:textSize="18sp"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintHorizontal_bias="0.0"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toTopOf="parent" />
+
+
+            <TextView
+                android:id="@+id/editTextTextPersonName"
+                android:layout_width="133dp"
+                android:layout_height="25dp"
+                android:layout_marginTop="10dp"
+                android:ems="10"
+                android:inputType="textPersonName"
+                android:text="Home details"
+                android:textStyle="bold"
+                app:layout_constraintBottom_toBottomOf="parent"
+                app:layout_constraintStart_toStartOf="@+id/textView12"
+                app:layout_constraintTop_toTopOf="@+id/imageView13"
+                app:layout_constraintVertical_bias="0.164" />
+
+            <TextView
+                android:id="@+id/textView12"
+                android:layout_width="196dp"
+                android:layout_height="26dp"
+                android:layout_marginStart="70dp"
+                android:layout_marginBottom="216dp"
+                android:text="Get an instant quote"
+                android:textStyle="bold"
+                app:layout_constraintBottom_toBottomOf="@+id/imageView13"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintHorizontal_bias="0.0"
+                app:layout_constraintStart_toStartOf="@+id/imageView13"
+                app:layout_constraintTop_toBottomOf="@+id/textView36"
+                app:layout_constraintVertical_bias="0.789" />
+
+            <ImageView
+                android:id="@+id/imageView30"
+                android:layout_width="407dp"
+                android:layout_height="329dp"
+                android:layout_marginTop="4dp"
+                android:background="#3F51B5"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintHorizontal_bias="0.0"
+                app:layout_constraintStart_toStartOf="@id/imageView13"
+                app:layout_constraintTop_toBottomOf="@+id/imageView13"
+                app:srcCompat="@drawable/rectangle_13" />
+
+            <EditText
+                android:id="@+id/zip_code"
+                android:layout_width="89dp"
+                android:layout_height="50dp"
+                android:layout_marginTop="12dp"
+                android:layout_marginEnd="4dp"
+                android:editable="true"
+                android:hint="Zip code"
+                android:inputType="text"
+                android:textColor="#0A3379"
+                android:textSize="14sp"
+                app:layout_constraintEnd_toEndOf="@+id/address"
+                app:layout_constraintTop_toBottomOf="@+id/address" />
+
+            <EditText
+                android:id="@+id/city"
+                android:layout_width="97dp"
+                android:layout_height="48dp"
+                android:layout_marginTop="12dp"
+                android:editable="true"
+                android:hint="City"
+                android:inputType="text"
+                android:textColor="#0A3379"
+                android:textSize="14sp"
+                app:layout_constraintStart_toStartOf="@+id/address"
+                app:layout_constraintTop_toBottomOf="@+id/address" />
+
+            <EditText
+                android:id="@+id/state"
+                android:layout_width="96dp"
+                android:layout_height="49dp"
+                android:layout_marginBottom="4dp"
+                android:editable="true"
+                android:hint="State"
+                android:inputType="text"
+                android:textColor="#0A3379"
+                android:textSize="14sp"
+                app:layout_constraintBottom_toTopOf="@+id/idv"
+                app:layout_constraintStart_toEndOf="@+id/city" />
+
+            <EditText
+                android:id="@+id/SSN_aadhar"
+                android:layout_width="201dp"
+                android:layout_height="38dp"
+                android:layout_marginBottom="12dp"
+                android:editable="true"
+                android:hint="SSN/Aadhar(2345-1111-1111)"
+                android:inputType="text"
+                android:textColor="#0A3379"
+                android:textSize="14sp"
+                android:visibility="invisible"
+                app:layout_constraintBottom_toTopOf="@+id/checkBox_EULA"
+                app:layout_constraintEnd_toEndOf="@+id/idv"
+                app:layout_constraintHorizontal_bias="0.0"
+                app:layout_constraintStart_toStartOf="@+id/idv" />
+
+            <EditText
+                android:id="@+id/address"
+                android:layout_width="287dp"
+                android:layout_height="52dp"
+                android:layout_marginTop="12dp"
+                android:editable="true"
+                android:hint="Property Address"
+                android:inputType="textPostalAddress"
+                android:textColor="#0A3379"
+                android:textSize="14sp"
+                app:layout_constraintBottom_toTopOf="@+id/state"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintHorizontal_bias="0.564"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/imageView13"
+                app:layout_constraintVertical_bias="0.0" />
+
+            <ImageButton
+                android:id="@+id/simpleImageButtonCalendar"
+                android:layout_width="48dp"
+                android:layout_height="58dp"
+                android:layout_marginBottom="12dp"
+                android:adjustViewBounds="true"
+                android:background="#FFF"
+                android:onClick="setDate"
+                android:padding="20dp"
+                android:src="@drawable/calendar_foreground"
+                app:layout_constraintBottom_toBottomOf="@+id/bday_date"
+                app:layout_constraintEnd_toEndOf="@+id/imageView13"
+                app:layout_constraintHorizontal_bias="0.692"
+                app:layout_constraintStart_toStartOf="@+id/bday_date"
+                app:layout_constraintTop_toBottomOf="@+id/editTextTextPersonName" />
+
+            <TextView
+                android:id="@+id/textView38"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="70dp"
+                android:layout_marginTop="8dp"
+                android:text="Construction Type"
+                app:layout_constraintBottom_toTopOf="@+id/spinner4_cons_type"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintHorizontal_bias="0.732"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/bday_date"
+                app:layout_constraintVertical_bias="1.0" />
+
+            <EditText
+                android:id="@+id/idv"
+                android:layout_width="197dp"
+                android:layout_height="49dp"
+                android:layout_marginBottom="8dp"
+                android:editable="true"
+                android:hint="Insurance coverage"
+                android:inputType="number"
+                android:textColor="#0A3379"
+                android:textSize="14sp"
+                app:layout_constraintBottom_toTopOf="@+id/SSN_aadhar"
+                app:layout_constraintEnd_toEndOf="@+id/zip_code"
+                app:layout_constraintHorizontal_bias="0.0"
+                app:layout_constraintStart_toStartOf="@+id/city" />
+
+            <Button
+                android:id="@+id/get_quote"
+                android:layout_width="233dp"
+                android:layout_height="54dp"
+
+
+                android:layout_marginBottom="28dp"
+                android:onClick="getHomeQuote"
+                android:text="Get a quote"
+                android:textColor="@color/white"
+                android:theme="@style/PrimaryButton"
+                app:layout_constraintBottom_toBottomOf="parent"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintHorizontal_bias="0.449"
+                app:layout_constraintStart_toStartOf="parent" />
+
+            <CheckBox
+                android:id="@+id/checkBox_EULA"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Background check?"
+                android:visibility="invisible"
+                app:layout_constraintBottom_toTopOf="@+id/get_quote"
+                app:layout_constraintEnd_toEndOf="@+id/SSN_aadhar"
+                app:layout_constraintHorizontal_bias="0.0"
+                app:layout_constraintStart_toStartOf="@+id/SSN_aadhar" />
+
+        </androidx.constraintlayout.widget.ConstraintLayout>
+    </ScrollView>
+
+</androidx.constraintlayout.widget.ConstraintLayout>

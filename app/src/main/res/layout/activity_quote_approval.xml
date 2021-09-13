@@ -1,0 +1,226 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".QuoteApproval">
+
+    <CheckedTextView
+        android:id="@+id/txt_decision3"
+        android:layout_width="312dp"
+        android:layout_height="71dp"
+        android:layout_marginTop="4dp"
+        android:text="We are sharing your Aadhar/SSN with 3rd party.You wil contacted shortly for background check"
+        android:textAlignment="viewStart"
+        android:textColor="#2196F3"
+        android:textSize="14sp"
+        app:layout_constraintEnd_toEndOf="@+id/txt_decision"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="@+id/txt_decision"
+        app:layout_constraintTop_toBottomOf="@+id/txt_decision" />
+
+    <TextView
+        android:id="@+id/txt_title"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="4dp"
+        android:text="Processing Quote Issuance..."
+        android:textAlignment="center"
+        android:textColor="#3F51B5"
+        android:textSize="18sp"
+        android:textStyle="bold"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.497"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <CheckedTextView
+        android:id="@+id/txt_checkconsent"
+        android:layout_width="279dp"
+        android:layout_height="52dp"
+        android:layout_marginTop="10dp"
+        android:text="Checking consumer’s consents and its validity with Verify..."
+        android:textAlignment="center"
+        android:textColor="#2196F3"
+        android:textSize="16sp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.496"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/txt_title" />
+
+    <TableLayout
+        android:id="@+id/tableLayout"
+        android:layout_width="312dp"
+        android:layout_height="322dp"
+        android:layout_marginTop="10dp"
+        android:background="#000000"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/txt_checkconsent"
+        app:layout_constraintVertical_bias="0.0">
+
+        <TableRow
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_margin="1dp"
+            android:background="#FFFFFF">
+
+            <TextView
+                android:id="@+id/textView15"
+                android:layout_width="100dp"
+                android:layout_height="80dp"
+                android:layout_marginStart="1dp"
+                android:layout_marginLeft="1dp"
+                android:layout_marginTop="1dp"
+                android:layout_marginEnd="1dp"
+                android:text="Business Purpose"
+                android:textAlignment="center"
+                android:textColor="#FF5722"
+                android:textStyle="bold" />
+
+            <TextView
+                android:id="@+id/textView29"
+                android:layout_width="100dp"
+                android:layout_height="80dp"
+                android:layout_marginStart="1dp"
+                android:layout_marginLeft="1dp"
+                android:layout_marginTop="1dp"
+                android:layout_marginEnd="1dp"
+                android:text="Consent Status"
+                android:textAlignment="center"
+                android:textColor="#FF5722"
+                android:textStyle="bold" />
+
+            <TextView
+                android:id="@+id/textView30"
+                android:layout_width="100dp"
+                android:layout_height="80dp"
+                android:layout_marginStart="1dp"
+                android:layout_marginLeft="1dp"
+                android:layout_marginTop="1dp"
+                android:layout_marginEnd="1dp"
+                android:text="Data Consented"
+                android:textAlignment="center"
+                android:textColor="#FF5722"
+                android:textStyle="bold" />
+        </TableRow>
+
+        <TableRow
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_margin="1dp"
+            android:background="#FFFFFF">
+
+            <TextView
+                android:id="@+id/textView31"
+                android:layout_width="100dp"
+                android:layout_height="120dp"
+                android:layout_marginStart="1dp"
+                android:layout_marginLeft="1dp"
+                android:layout_marginTop="1dp"
+                android:layout_marginEnd="1dp"
+                android:text="Paperless Commn."
+                android:textAlignment="center"
+                android:textColor="#3F51B5" />
+
+            <TextView
+                android:id="@+id/consent_status"
+                android:layout_width="100dp"
+                android:layout_height="120dp"
+                android:layout_marginStart="1dp"
+                android:layout_marginLeft="1dp"
+                android:layout_marginTop="1dp"
+                android:layout_marginEnd="1dp"
+                android:text="Approved"
+                android:textAlignment="center"
+                android:textColor="#3F51B5" />
+
+            <TextView
+                android:id="@+id/ds_email"
+                android:layout_width="100dp"
+                android:layout_height="120dp"
+                android:layout_marginStart="1dp"
+                android:layout_marginLeft="1dp"
+                android:layout_marginTop="1dp"
+                android:layout_marginEnd="1dp"
+                android:ems="10"
+                android:gravity="start|top"
+                android:text="Email          ks@yopmail.com"
+                android:textColor="#3F51B5" />
+        </TableRow>
+
+        <TableRow
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_margin="1dp"
+            android:background="#FFFFFF">
+
+            <TextView
+                android:id="@+id/Consent_type"
+                android:layout_width="98dp"
+                android:layout_height="113dp"
+                android:layout_marginStart="1dp"
+                android:layout_marginLeft="1dp"
+                android:layout_marginTop="1dp"
+                android:layout_marginEnd="1dp"
+                android:text="KYC"
+                android:textAlignment="center"
+                android:textColor="#3F51B5" />
+
+            <TextView
+                android:id="@+id/consent_status2"
+                android:layout_width="99dp"
+                android:layout_height="113dp"
+                android:layout_marginStart="1dp"
+                android:layout_marginLeft="1dp"
+                android:layout_marginTop="1dp"
+                android:layout_marginEnd="1dp"
+                android:text="Approved"
+                android:textAlignment="center"
+                android:textColor="#3F51B5" />
+
+            <TextView
+                android:id="@+id/aadhar"
+                android:layout_width="95dp"
+                android:layout_height="113dp"
+                android:layout_marginStart="1dp"
+                android:layout_marginLeft="1dp"
+                android:layout_marginTop="1dp"
+                android:layout_marginEnd="1dp"
+                android:ems="10"
+                android:gravity="start|top"
+                android:text="Aadhar/SSN ####-####-####"
+                android:textColor="#3F51B5" />
+        </TableRow>
+
+    </TableLayout>
+
+    <CheckedTextView
+        android:id="@+id/txt_decision"
+        android:layout_width="311dp"
+        android:layout_height="32dp"
+        android:layout_marginTop="12dp"
+        android:text="Sending policy document thru mail                                                           "
+        android:textAlignment="viewStart"
+        android:textColor="#2196F3"
+        android:textSize="14sp"
+        app:layout_constraintEnd_toEndOf="@+id/tableLayout"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="@+id/tableLayout"
+        app:layout_constraintTop_toBottomOf="@+id/tableLayout" />
+
+    <Button
+        android:id="@+id/btn_ok"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="7dp"
+        android:onClick="onClick"
+        android:text="OK"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.498"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/txt_decision3" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>
