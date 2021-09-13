@@ -1,4 +1,5 @@
-# tmiMobileApp - Contents
+# CIAM Demo - Omni-channel Consumer Journey with IBM Security Verify
+## tmiMobileApp - Contents
 
 - [**Introduction**](#introduction)
   - [Usecases](#usecases)
