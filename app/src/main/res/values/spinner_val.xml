@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string-array name="car_make">
+        <item>None</item>
+        <item>Volvo</item>
+        <item>Saab</item>
+        <item>Mercedes</item>
+        <item>Audi</item>
+    </string-array>
+
+    <string-array name="car_model">
+        <item>None</item>
+        <item>S100</item>
+        <item>S200</item>
+        <item>S200ES</item>
+        <item>S350</item>
+    </string-array>
+    <string-array name="construction_type">
+        <item>--Construction Type--</item>
+        <item>Wood frame</item>
+        <item>Steel frame</item>
+        <item>Concrete frame</item>
+
+    </string-array>
+</resources>
