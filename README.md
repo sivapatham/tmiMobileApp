@@ -46,7 +46,7 @@
    + __TrustMeInsurance WebApp setup__
 
      TrustMeInsurance WebApp is needed for Omni channel consumer journey.
-     <br/>This [link](https://github.ibm.com/gsi-isv/ciam-demo.git) will take you to the TrustMeInsurance WebApp Github repository.
+     <br/>This [link](https://github.com/ajcase/ci-ciam) will take you to the TrustMeInsurance WebApp Github repository.
 
    + __Phone OR Android Studio Emulator__
 
@@ -87,7 +87,7 @@
 
    + __TrustMeInsurance WebApp setup__
 
-     This [link](https://github.ibm.com/gsi-isv/ciam-demo.git) will take you to the TrustMeInsurance WebApp Github repository.
+     This [link](https://github.com/ajcase/ci-ciam) will take you to the TrustMeInsurance WebApp Github repository.
 
 ### Setup Android Studio
 Click [here](docs/Android_Studio_Setup.md) to get instructions to setup Android Studio for mobile app development
