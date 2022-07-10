@@ -37,7 +37,7 @@
 |<img src="docs/img/login.png" alt="login" height="500" width="250"/>|<img src="docs/img/profile.png" alt="profile" height="500" width="250"/>|<img src="docs/img/pushverify.png" alt="pushverify" height="500" width="250"/>|
 
 ### Recorded Demo Video
-[<img src="docs/img/demo-thumb.png" alt="demo" height="300" width="500"/>](https://ibm.box.com/s/1tdt7jvkvgcpo840bdy0430lt2061qkw)
+[<img src="docs/img/demo-thumb.png" alt="demo" height="300" width="500"/>](https://youtu.be/jsOaYZurqEs)
 
 ## Demo User
 
