@@ -3,7 +3,6 @@
 
 - [**Introduction**](#introduction)
   - [Usecases](#usecases)
-  - [Recorded Demo Video](#recorded-demo-video)
 
 - [**App Setup as a Demo User**](#demo-user)
   - [Pre-requisites](#demo-pre-requisites)
@@ -36,8 +35,6 @@
 |Forgot passsword|Change password|---|
 |<img src="docs/img/login.png" alt="login" height="500" width="250"/>|<img src="docs/img/profile.png" alt="profile" height="500" width="250"/>|<img src="docs/img/pushverify.png" alt="pushverify" height="500" width="250"/>|
 
-### Recorded Demo Video
-[<img src="docs/img/demo-thumb.png" alt="demo" height="300" width="500"/>](https://youtu.be/jsOaYZurqEs)
 
 ## Demo User
 
